@@ -1,0 +1,32 @@
+.apple-button {
+    display: inline-block;
+    line-height: 1;
+    white-space: nowrap;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #c4c4c4;
+    color: #1f2d3d;
+    margin: 0;
+    padding: 10px 15px;
+    border-radius: 4px;
+    outline: none;
+}
+.apple_default:hover {
+    color: #20a0ff;
+    border-color: #20a0ff;
+}
+.apple-button:hover {
+    color: #1d90e6;
+    border-color: #1d90e6;
+    outline: 0;
+}
+.apple_primary {
+    color: #fff;
+    background-color: #20a0ff;
+    border-color: #20a0ff;
+}
+.apple_primary:hover{
+    background: #4db3ff;
+    border-color: #4db3ff;
+    color: #fff;
+ }
