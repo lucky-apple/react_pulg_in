@@ -1,0 +1,19 @@
+.apple-input {
+    position: relative;
+    display: inline-block;
+    input {
+        outline: none;
+        border: 1px solid #bfcbd9;
+        padding: 10px 15px;
+        border-radius: 5px;
+    }
+    span {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        font-size: 14px;
+    }
+    input:focus {
+        border-color: #20a0ff;
+    }
+}
