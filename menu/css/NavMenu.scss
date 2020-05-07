@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+// 悬停
+@mixin hover() {
+    background-color: #d1dbe5;
+    color: #20a0ff;
+}
+.menu { // 菜单
+    list-style: none;
+    font-size: 14px;
+    .apple-menu-sub { // 子菜单
+        padding-bottom: 10px;
+        .apple-menu-sub_tilte { // 标题
+            cursor: pointer;
+            text-align: left;
+            padding: 10px 15px;
+            &:hover {
+                @include hover()
+            }
+        }
+        .apple-menu-sub_children { // 子菜单的子菜单
+            display: none;
+            background-color: #e4e8f1;
+            cursor: pointer;
+            &.isShow {
+                display: block;
+            }
+            &:hover {
+                @include hover()
+            }
+        }
+    }
+    &.apple_menu_light { // 菜单主题
+        background: #eef1f6;
+        color: #48576a;
+    }
+    .apple-menu-item { // 子菜单的item
+        padding: 10px 15px;
+        &.is_active {
+            background-color: #e6f7ff;
+            color: #20a0ff;
+        }
+    }
+}
