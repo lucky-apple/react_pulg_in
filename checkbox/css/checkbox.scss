@@ -1,0 +1,66 @@
+.apple-checkbox {
+    cursor: pointer;
+    font-size: 14px;
+
+    input {
+        width: 0px;
+    }
+
+    &.is_disabled {
+        cursor: not-allowed;
+        
+        .apple-checkbox_text {
+            color: #bbb;
+        }
+
+        .apple-checkbox_label {
+            &:hover {
+                border-color: #bbb;
+            }
+
+            &.is_checked {
+                background-color: #bbb;
+                border-color: #bbb;
+            }
+        }
+
+    }
+
+    .apple-checkbox_label {
+        display: inline-block;
+        width: 14px;
+        vertical-align: sub;
+        border-radius: 3px;
+        height: 14px;
+        border: 1px solid #DCDFE6;
+        
+        &:hover {
+            border-color: #20a0ff;
+        }
+
+        &.is_checked {
+            background-color: #20a0ff;
+            border-color: #0190fe;
+        }
+
+        &.is_checked:after {
+            content: "";
+            display: inline-block;
+            margin-bottom: 4px;
+            transform: rotate(45deg) scaleY(1);
+            border: 2px solid #fff;
+            border-left: 0;
+            border-top: 0;
+            height: 8px;
+            left: 5px;
+            // position: absolute;
+            top: 1px;
+            // -ms-transform: rotate(45deg) scaleY(0);
+            // transform: rotate(45deg) scaleY(0);
+            width: 4px;
+            transition: transform .15s cubic-bezier(.71, -.46, .88, .6) .05s;
+            -ms-transform-origin: center;
+            transform-origin: center;
+        }
+    }
+}
