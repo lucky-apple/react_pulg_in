@@ -1,0 +1,25 @@
+.apple-container {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    &.is-vertical {
+        flex-direction: column;
+    }
+
+    .apple-aside {
+        display: inline-block;
+    }
+
+    .apple-main {
+        height: 100%;
+        line-height: 100%;
+    }
+
+    .apple-header,
+    .apple-footer {
+        // height: 60px;
+        line-height: 60px;
+    }
+}
