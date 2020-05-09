@@ -1,0 +1,42 @@
+.apple-tab {
+    border: 1px solid #dcdfe6;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.12), 0 0 6px 0 rgba(0,0,0,.04);
+    text-align: left;
+    font-size: 14px;
+    margin: 10px 15px;
+    .apple-tab_header { // 头部
+        border-bottom: 1px solid #dcdfe6;
+        background-color: #f5f7fa;
+        .apple-tabs_tilte { // 标题
+            cursor: pointer;
+            display: inline-block;
+            padding: 10px 15px;
+            border-right: 1px solid #dcdfe6;
+            margin-bottom: -1px;
+            &:hover {
+                .is_close  {
+                    display: inline;
+                }
+            }
+            i {
+                display: none;
+                
+            }
+            &.is_active {
+                background-color: white;
+                border-bottom: 1px solid white;
+            }
+        }
+    }
+    .apple-tabs_content { // 标签内容
+        padding: 10px 15px;
+        .apple-tabs-plane {
+            display: none;
+        }
+        .is_show { // 是否
+            .apple-tabs-plane {
+                display: block;
+            }
+        }
+    }
+}
